@@ -11,5 +11,10 @@ namespace Semi_Webshop.Controllers
             var movie = new Movie() { Name = "Terminator I" };
             return View(movie);
         }
+
+        public ActionResult Edit(int id)
+        {
+            return Content("Id = " + id);
+        }
     }
 }
