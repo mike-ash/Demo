@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<products>
+  <product id="001">
+    <name>The Walking Dead</name>
+    <description><![CDATA[Sheriff Deputy Rick Grimes leads a group of survivors in a world overrun by the walking dead. Fighting the dead, fearing the living.]]></description>
+    <price>45.99</price>
+    <image>001.jpg</image>
+  </product>
+  <product id="002">
+    <name>Brooklyn Nine-Nine</name>
+    <description><![CDATA[Jake Peralta, an immature but talented NYPD detective in Brooklyn's 99th Precinct, comes into immediate conflict with his new commanding officer, the serious and stern Captain Ray Holt.]]></description>
+    <price>41.99</price>
+    <image>002.jpg</image>
+  </product>
+  <product id="003">
+    <name>Agents of S.H.I.E.L.D.</name>
+    <description><![CDATA[The missions of the Strategic Homeland Intervention, Enforcement and Logistics Division.]]></description>
+    <price>39.50</price>
+    <image>003.jpg</image>
+  </product>
+  <product id="004">
+    <name>Outsiders</name>
+    <description><![CDATA[A struggle for power and control set in the rugged and mysterious hills of Appalachia, "Outsiders" tells the story of the Farrell clan, a family of outsiders who've been in these parts since before anyone can remember. Living off the grid and above the law on their mountaintop homestead, they'll protect their world and defend their way of life using any means necessary.]]></description>
+    <price>39.99</price>
+    <image>004.jpg</image>
+  </product>
+  <product id="005">
+    <name>Game of Silence</name>
+    <description><![CDATA[A rising attorney finds his perfectly crafted life threatened when his long-lost childhood friends threaten to expose a dark secret from their past.]]></description>
+    <price>35.50</price>
+    <image>005.jpg</image>
+  </product>
+  <product id="006">
+    <name>New Girl</name>
+    <description><![CDATA[After a bad break-up, Jess, an offbeat young woman, moves into an apartment loft with three single men. Although they find her behavior very unusual, the men support her - most of the time.]]></description>
+    <price>35.50</price>
+    <image>006.jpg</image>
+  </product>
+  <product id="007">
+    <name>Faking It</name>
+    <description><![CDATA[After numerous attempts of trying to be popular two best friends decide to come out as lesbians, which launches them to instant celebrity status. Seduced by their newfound fame, Karma and Amy decide to keep up their romantic ruse.]]></description>
+    <price>40.50</price>
+    <image>007.jpg</image>
+  </product>
+  <product id="008">
+    <name>Legends of Tomorrow</name>
+    <description><![CDATA[Focuses on time-traveling rogue Rip Hunter, who has to recruit a rag-tag team of heroes and villains to help prevent an apocalypse that could impact not only Earth, but all of time.]]></description>
+    <price>39.99</price>
+    <image>008.jpg</image>
+  </product>
+  <product id="009">
+    <name>Awkward</name>
+    <description><![CDATA[An unpopular 15 year old gains immediate, yet unwanted, popularity at her high school when the student body mistakes an accident she has for a suicide attempt.]]></description>
+    <price>35.50</price>
+    <image>009.jpg</image>
+  </product>
+  <product id="010">
+    <name>IZombie</name>
+    <description><![CDATA[A medical resident finds that being a zombie has its perks, which she uses to assist the police.]]></description>
+    <price>35.50</price>
+    <image>010.jpg</image>
+  </product>
+  <product id="011">
+    <name>The Flash</name>
+    <description><![CDATA[Barry Allen wakes up 9 months after he was struck by lightning and discovers that the bolt gave him the power of super speed. With his new team and powers, Barry becomes "The Flash" and fights crime in Central City.]]></description>
+    <price>39.99</price>
+    <image>011.jpg</image>
+  </product>
+  <product id="012">
+    <name>The Leftovers</name>
+    <description><![CDATA[Three years after the simultaneous disappearance of 2% of the global population, a group of people from Mapleton, New York struggle to continue their lives while they cope with loss and the tragedy of the unexplained nature of the event.]]></description>
+    <price>35.50</price>
+    <image>012.jpg</image>
+  </product>
+  <product id="013">
+    <name>The BOSS</name>
+    <description><![CDATA[A titan of industry is sent to prison after she's caught insider trading. When she emerges ready to rebrand herself as America's latest sweetheart, not everyone she screwed over is so quick to forgive and forget.]]></description>
+    <price>31.99</price>
+    <image>013.jpg</image>
+  </product>
+  <product id="014">
+    <name>Breaking Bad</name>
+    <description><![CDATA[A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine, with his former student, in order to secure his family's financial future.]]></description>
+    <price>49.99</price>
+    <image>014.jpg</image>
+  </product>
+  <product id="015">
+    <name>The Big Bang Theory</name>
+    <description><![CDATA[A woman who moves into an apartment across the hall from two brilliant but socially awkward physicists shows them how little they know about life outside of the laboratory.]]></description>
+    <price>39.99</price>
+    <image>015.jpg</image>
+  </product>
+  <product id="016">
+    <name>Downtown Abbey</name>
+    <description><![CDATA[A chronicle of the lives of the British aristocratic Crawley family and their servants in the early 20th Century.]]></description>
+    <price>39.99</price>
+    <image>016.jpg</image>
+  </product>
+  <product id="017">
+    <name>The Vampire Diaries</name>
+    <description><![CDATA[A teenage girl is torn between two vampire brothers.]]></description>
+    <price>41.50</price>
+    <image>017.jpg</image>
+  </product>
+  <product id="018">
+    <name>Criminal Minds</name>
+    <description><![CDATA[The cases of the FBI Behavioral Analysis Unit (BAU), an elite group of profilers who analyze the nation's most dangerous serial killers and individual heinous crimes in an effort to anticipate their next moves before they strike again.]]></description>
+    <price>35.50</price>
+    <image>018.jpg</image>
+  </product>
+  <product>
+
+  </product>
+</products>

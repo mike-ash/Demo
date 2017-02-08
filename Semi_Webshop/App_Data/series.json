@@ -1,0 +1,79 @@
+﻿[
+  {
+    "id": "001",
+    "name": "The Walking Dead",
+    "description": "Sheriff Deputy Rick Grimes leads a group of survivors in a world overrun by the walking dead. Fighting the dead, fearing the living.",
+    "price": 45.99,
+    "image": "001.jpg"
+  },
+  {
+    "id": "002",
+    "name": "Brooklyn Nine-Nine",
+    "description": "Jake Peralta, an immature but talented NYPD detective in Brooklyn's 99th Precinct, comes into immediate conflict with his new commanding officer, the serious and stern Captain Ray Holt.",
+    "price": 29.99,
+    "image": "002.jpg"
+  },
+  {
+    "id": "003",
+    "name": "Agents of S.H.I.E.L.D.",
+    "description": "The missions of the Strategic Homeland Intervention, Enforcement and Logistics Division.",
+    "price": 42.50,
+    "image": "003.jpg"
+  },
+  {
+    "id": "004",
+    "name": "Outsiders",
+    "description": "A struggle for power and control set in the rugged and mysterious hills of Appalachia, Outsiders tells the story of the Farrell clan, a family of outsiders who've been in these parts since before anyone can remember. Living off the grid and above the law on their mountaintop homestead, they'll protect their world and defend their way of life using any means necessary.",
+    "price": 50.00,
+    "image": "004.jpg"
+  },
+  {
+    "id": "005",
+    "name": "Game of Silence",
+    "description": "A rising attorney finds his perfectly crafted life threatened when his long-lost childhood friends threaten to expose a dark secret from their past.",
+    "price": 36.69,
+    "image": "005.jpg"
+  },
+  {
+    "id": "006",
+    "name": "New Girl",
+    "description": "After a bad break-up, Jess, an offbeat young woman, moves into an apartment loft with three single men. Although they find her behavior very unusual, the men support her - most of the time.",
+    "price": 80.40,
+    "image": "006.jpg"
+  },
+  {
+    "id": "007",
+    "name": "Faking It",
+    "description": "After numerous attempts of trying to be popular two best friends decide to come out as lesbians, which launches them to instant celebrity status. Seduced by their newfound fame, Karma and Amy decide to keep up their romantic ruse.",
+    "price": 45.50,
+    "image": "007.jpg"
+  },
+  {
+    "id": "008",
+    "name": "Legends of Tomorrow",
+    "description": "Focuses on time-traveling rogue Rip Hunter, who has to recruit a rag-tag team of heroes and villains to help prevent an apocalypse that could impact not only Earth, but all of time.",
+    "price": 64.22,
+    "image": "008.jpg"
+  },
+  {
+    "id": "009",
+    "name": "Awkward",
+    "description": "An unpopular 15 year old gains immediate, yet unwanted, popularity at her high school when the student body mistakes an accident she has for a suicide attempt.",
+    "price": 54.35,
+    "image": "009.jpg"
+  },
+  {
+    "id": "010",
+    "name": "IZombie",
+    "description": "A medical resident finds that being a zombie has its perks, which she uses to assist the police.",
+    "price": 62.99,
+    "image": "010.jpg"
+  },
+  {
+    "id": "011",
+    "name": "The Flash",
+    "description": "Barry Allen wakes up 9 months after he was struck by lightning and discovers that the bolt gave him the power of super speed. With his new team and powers, Barry becomes 'The Flash' and fights crime in Central City.",
+    "price": 43.25,
+    "image": "011.jpg"
+  }
+]
