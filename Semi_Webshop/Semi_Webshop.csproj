@@ -218,6 +218,10 @@
     <Compile Include="Migrations\201702080716176__NameProp.Designer.cs">
       <DependentUpon>201702080716176__NameProp.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201702081053287__UpdatedMovieClass.cs" />
+    <Compile Include="Migrations\201702081053287__UpdatedMovieClass.Designer.cs">
+      <DependentUpon>201702081053287__UpdatedMovieClass.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -315,6 +319,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201702080716176__NameProp.resx">
       <DependentUpon>201702080716176__NameProp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702081053287__UpdatedMovieClass.resx">
+      <DependentUpon>201702081053287__UpdatedMovieClass.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

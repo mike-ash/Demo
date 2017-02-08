@@ -1,5 +1,6 @@
 namespace Semi_Webshop.Migrations
 {
+    using Models;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
@@ -20,13 +21,13 @@ namespace Semi_Webshop.Migrations
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
             //  to avoid creating duplicate seed data. E.g.
             //
-            //    context.People.AddOrUpdate(
-            //      p => p.FullName,
-            //      new Person { FullName = "Andrew Peters" },
-            //      new Person { FullName = "Brice Lambson" },
-            //      new Person { FullName = "Rowan Miller" }
-            //    );
-            //
+            //context.Movies.AddOrUpdate(
+            //  p => p.Name,
+            //  new Movie { Name = "" },
+            //  new Movie { Name = "Brice Lambson" },
+            //  new Movie { Name = "Rowan Miller" }
+            //);
+
         }
     }
 }
