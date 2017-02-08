@@ -210,6 +210,14 @@
     <Compile Include="Migrations\201702071423177__Base_Init.Designer.cs">
       <DependentUpon>201702071423177__Base_Init.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201702071449358__VM.cs" />
+    <Compile Include="Migrations\201702071449358__VM.Designer.cs">
+      <DependentUpon>201702071449358__VM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702080716176__NameProp.cs" />
+    <Compile Include="Migrations\201702080716176__NameProp.Designer.cs">
+      <DependentUpon>201702080716176__NameProp.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -223,6 +231,7 @@
     <Content Include="Content\bootstrap-superhero.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\KAPOW-logo.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -282,6 +291,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\Themes\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -297,6 +307,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201702071423177__Base_Init.resx">
       <DependentUpon>201702071423177__Base_Init.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702071449358__VM.resx">
+      <DependentUpon>201702071449358__VM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702080716176__NameProp.resx">
+      <DependentUpon>201702080716176__NameProp.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
