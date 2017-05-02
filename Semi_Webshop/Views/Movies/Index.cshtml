@@ -1,0 +1,67 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using Semi_Webshop.Models
+@using PagedList
+@using PagedList.Mvc
+
+@model IPagedList<Serie>
+<br />
+
+<div @*id="animation"*@><h2 style="text-shadow:9px 10px 10px #ff6a00"><i class="fa fa-book"></i> <strong> &nbsp; &nbsp;Series</strong></h2> </div>
+
+<div id="content">
+    @foreach (Serie s in Model)
+    {
+        <article class="serie">
+            <div class="row">
+                <div class="col-md-2 col-xs-12">
+                    <a href="@Url.Action("Serie", "Movies", new { id = s.Id })"><img class="product-thumbnail" src="~/Content/ProductPics/@s.Image" alt="@s.Name" /></a>
+                </div>
+
+                <div class="col-md-10 col-xs-12">
+                    <header>
+                        <h3>@Html.ActionLink(s.Name, "Serie", "Movies", new { id = s.Id }, null)</h3>
+                    </header>
+                    <p>Price: <strong>@Html.DisplayFor(m => s.Price)</strong></p>
+                    <p><a class="btn btn-primary" href="@Url.Action("Serie","Movies", new { id = s.Id})"><i class="fa fa-book"></i> Details &raquo;</a></p>
+                </div>
+            </div>
+        </article>
+    }
+
+    <div class="contentPager">
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page }), PagedListRenderOptions.OnlyShowFivePagesAtATime)
+    </div>
+</div>
+
+@section scripts
+{
+    <script language="javascript" type="text/javascript">
+        $(document).ready(function () {
+            if (window.history && history.pushState) {
+                $(window).bind('popstate', function (e) {
+                    loadItems(location.pathname + location.search);
+                });
+                doPager();
+            }
+        });
+
+        function doPager() {
+            $('.contentPager a[href]').click(function (e) {
+                e.preventDefault();
+                loadItems($(this).attr('href'));
+                history.pushState(null, null, $(this).attr('href'));
+            });
+        }
+
+        function loadItems(url) {
+            $('#content').empty().load(url + ' #content', function () {
+                doPager();
+            });
+        }
+    </script>
+}

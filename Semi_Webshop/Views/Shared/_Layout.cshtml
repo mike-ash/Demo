@@ -23,6 +23,9 @@
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Movies", "Index", "Movies")</li>      
                 </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li id="cart" />
+                </ul>
                 @Html.Partial("_LoginPartial")
             </div>
         </div>
@@ -38,5 +41,26 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+
+    <script language="javascript" type="text/javascript">
+
+        $(document).ready(function () {
+            refreshCartSummary();
+            window.addEventListener("pageshow", function (e) {
+                refreshCartSummary();
+            }, false);
+        });
+
+        function refreshCartSummary() {
+            $.ajax({
+                url: "@(Url.Action("CartSummary","ShoppingCart"))",
+                cache: false,
+                dataType: "html",
+                success: function (data) {
+                    $("#cart").html(data);
+                }
+            });
+        }
+    </script>
 </body>
 </html>

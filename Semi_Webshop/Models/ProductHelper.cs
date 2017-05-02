@@ -2,12 +2,11 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.Hosting;
 
 namespace Semi_Webshop.Models
 {
-    public class ProductHelper
+    public class ProductHelper //Json I/O helper
     {
         internal Movie Create()
         {

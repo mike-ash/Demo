@@ -1,0 +1,80 @@
+﻿@using Semi_Webshop.Models
+@{
+    ViewBag.Title = "Serie";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model Serie
+
+<div>
+    <article>
+        <header>
+            <h2 style="text-shadow:9px 10px 10px #ff6a00"><i class="fa fa-book"></i> @Model.Name</h2> <br />
+        </header>
+        <div class="row">
+            <div class="col-md-3">
+                <img class="product-photo" src="~/Content/ProductPics/@Model.Image" alt="@Model.Name" />
+            </div>
+            <div class="col-md-9">
+                <dl class="dl-horizontal pull-left">
+                    <dt>
+                        @Html.LabelFor(model => model.Name , new { @class = "label label-primary" })
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.Name)
+                    </dd> 
+                    <dt>
+                        @Html.LabelFor(model => model.Description, new { @class = "label label-primary" })
+                    </dt>
+                    <dd>
+                        @Html.Raw(Model.Description)
+                    </dd>
+                    <dt>
+                        @Html.LabelFor(model => model.Price, new { @class = "label label-primary" })
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.Price)
+                    </dd>
+                </dl>
+                <button class="btn btn-primary pull-right" id="addToCartButton"><i class="fa fa-shopping-cart"></i> Add to cart &raquo;</button>
+                <button class="btn btn-default pull-right" id="backButton" style="margin-right:8px;"><i class="fa fa-shopping-cart"></i> &larr; Back </button>
+            </div>
+        </div>
+    </article>
+   
+</div>
+<div class='notifications bottom-right'></div>
+
+@section Scripts {
+    <script type="text/javascript">
+
+    $(document).ready(function () {
+        $("#addToCartButton").click(function () {
+            $.post("@(Url.Action("AddItemToCart", "ShoppingCart", new { id = Model.Id }))", null,
+                function (data) {
+                    $.ajax({
+                        url: "@(Url.Action("CartSummary","ShoppingCart"))",
+                        cache: false,
+                        dataType: "html",
+                        success: function (data) {
+                            $("#cart").html(data);
+                        }
+                    });
+
+                    $('.bottom-right').notify({
+                        message: { text: "Item added successfully" },
+                        type: 'success',
+                        fadeOut: {
+                            delay: Math.floor(Math.random() * 500) + 2500
+                        }
+                    }).show();
+                });
+        });
+
+        $("#backButton").click(function () {
+            parent.history.back();
+            return false;
+        });
+    });
+    </script>
+}

@@ -1,6 +1,9 @@
-﻿using System;
+﻿using Semi_Webshop.services;
+using Semi_Webshop.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 
@@ -8,23 +11,21 @@ namespace Semi_Webshop.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        protected readonly IMovieService movieService;
+
+        public HomeController(IMovieService movieService)
         {
-            return View();
+            this.movieService = movieService;
         }
 
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
 
-            return View();
+        public async Task<ActionResult> Index()
+        {
+            var deals = await movieService.GetDealsAsync();
+            HomeIndexViewModel model = new HomeIndexViewModel() { Deals = deals.Take(3).ToList() };
+            return View(model);
         }
 
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
 
-            return View();
-        }
     }
 }

@@ -1,25 +1,38 @@
-﻿using Semi_Webshop.Models;
+﻿using PagedList;
+using Semi_Webshop.Models;
+using Semi_Webshop.services;
+using System.Threading.Tasks;
 using System.Web.Mvc;
 
 namespace Semi_Webshop.Controllers
 {
     public class MoviesController : Controller
     {
+        protected readonly IMovieService movieService;
+        protected readonly ISettingsService settingsService;
 
-        public ActionResult Index()
+
+        public MoviesController(IMovieService movieService, ISettingsService settingsService)
         {
-            return View();
+            this.movieService = movieService;
+            this.settingsService = settingsService;
         }
 
-        public ActionResult Random()
+        public async Task<ActionResult> Index(int? page)
         {
-            var movie = new Movie() { Name = "Terminator I" };
-            return View(movie);
+            var pageNumber = page ?? 1;
+            var pagedResults = (await movieService.GetSeriesAsync()).ToPagedList(pageNumber, settingsService.PageSize);
+
+            return View(pagedResults);
         }
 
-        public ActionResult Edit(int id)
+        public async Task<ActionResult> Serie(string id)
         {
-            return Content("Id = " + id);
+            Serie serie = await movieService.FindAsync(id);
+
+            if (serie == null) return HttpNotFound();
+
+            return View(serie);
         }
     }
 }
