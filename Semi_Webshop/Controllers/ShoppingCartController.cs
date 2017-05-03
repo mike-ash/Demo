@@ -11,8 +11,15 @@ namespace Semi_Webshop.Controllers
     {
 
         protected readonly IShoppingCartService shoppingCartService;
-        protected readonly IMovieService catalogService;
+        protected readonly IMovieService movieService;
         protected readonly IFinanceService financeService;
+
+        public ShoppingCartController(IShoppingCartService shoppingCartService, IMovieService movieService, IFinanceService financeService)
+        {
+            this.shoppingCartService = shoppingCartService;
+            this.movieService = movieService;
+            this.financeService = financeService;
+        }
         // GET: ShoppingCart
         public ActionResult Index()
         {
