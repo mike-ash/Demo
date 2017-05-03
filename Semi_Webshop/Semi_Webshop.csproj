@@ -257,8 +257,10 @@
     <Compile Include="Models\ProductHelper.cs" />
     <Compile Include="Models\Serie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="services\IFinanceService.cs" />
     <Compile Include="services\IMovieService.cs" />
     <Compile Include="services\Implementation\SettingsService.cs" />
+    <Compile Include="services\IShoppingCartService.cs" />
     <Compile Include="services\ISettingsService.cs" />
     <Compile Include="services\Implementation\MovieService.cs" />
     <Compile Include="Startup.cs" />
