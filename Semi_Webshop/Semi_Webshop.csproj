@@ -253,9 +253,9 @@
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
-    <Compile Include="Models\Movie.cs" />
+    <Compile Include="Models\Products\Movie.cs" />
     <Compile Include="Models\ProductHelper.cs" />
-    <Compile Include="Models\Serie.cs" />
+    <Compile Include="Models\Products\Serie.cs" />
     <Compile Include="Models\ShoppingCart\Cart.cs" />
     <Compile Include="Models\ShoppingCart\CartItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
